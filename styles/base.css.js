@@ -2,38 +2,35 @@ import { global } from 'styled-jsx/css';
 
 export default global`
   @font-face {
-    font-family: 'Averta';
-    src: url('/static/fonts/Averta-Regular.woff2') format('woff2'),
-         url('/static/fonts/Averta-Regular.woff') format('woff');
+    font-family: 'Oleo Script Swash Caps';
+    src: url('/static/fonts/OleoScriptSwashCaps-Regular.ttf') format('truetype');
   }
 
   @font-face {
-    font-family: 'Averta';
-    src: url('/static/fonts/Averta-SemiBold.woff2') format('woff2'),
-         url('/static/fonts/Averta-SemiBold.woff') format('woff');
+    font-family: 'Open Sans';
+    src: url('/static/fonts/OpenSans-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('/static/fonts/OpenSans-Regular.ttf') format('truetype');
     font-weight: 600;
   }
 
   @font-face {
-    font-family: 'Averta';
-    src: url('/static/fonts/Averta-ExtraBold.woff2') format('woff2'),
-         url('/static/fonts/Averta-ExtraBold.woff') format('woff');
-    font-weight: 800;
-  }
-
-  @font-face {
-    font-family: 'Averta';
-    src: url('/static/fonts/Averta-RegularItalic.woff2') format('woff2'),
-         url('/static/fonts/Averta-RegularItalic.woff') format('woff');
+    font-family: 'Open Sans';
+    src: url('/static/fonts/OpenSans-Italic') format('truetype');
     font-style: italic;
   }
+
+  html, body { font-size: 14pt; }
 
   body,
   input,
   textarea,
   select,
   button {
-    font-family: 'Averta', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'OpenSans', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     line-height: 1.4;
     color: #262626;
@@ -55,16 +52,7 @@ export default global`
     box-sizing: border-box;
   }
 
-  .bodyLock {
-    position: fixed;
-    width: 100%;
-  }
-
-  #Cardinal-Modal {
-    z-index: 29;
-  }
-
-  #Cardinal-Overlay {
-    z-index: 28;
+  section {
+    transition: all 0.5s;
   }
 `;

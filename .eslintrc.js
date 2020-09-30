@@ -1,0 +1,35 @@
+module.exports = {
+  plugins: ['react', 'prettier', 'jsx-a11y', 'import'],
+  parser: 'babel-eslint',
+  env: {
+    es6: true,
+    browser: true,
+    node: true,
+    mocha: true,
+    jasmine: true,
+    jest: true,
+  },
+  extends: [
+    'airbnb',
+    'prettier',
+    'prettier/react',
+    'plugin:prettier/recommended',
+  ],
+  rules: {
+    'react/jsx-filename-extension': 0,
+    'react/jsx-props-no-spreading': 0,
+    'react/static-property-placement': 0,
+    'react/state-in-constructor': 0,
+    'react/destructuring-assignment': 0,
+    'jsx-a11y/anchor-is-valid': 0,
+    'import/no-extraneous-dependencies': 0,
+    'no-console': 0,
+    camelcase: 0,
+  },
+  globals: {
+    document: true,
+    navigator: true,
+    window: true,
+    fetch: true,
+  },
+};
